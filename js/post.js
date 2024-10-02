@@ -13,9 +13,11 @@ for(const post of posts){
 
 const div = document.createElement('div');
 div.innerHTML = `
+<div >
 <h4>User-${post.userId}</h4>
 <h5>Post : ${post.title}</h5>
 <p> Post Description: ${post.body}</p>
+</div>
 
 `;
 
@@ -27,3 +29,4 @@ postContainer.appendChild(div)
 
 
 loadPosts()
+
