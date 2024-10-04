@@ -23,7 +23,8 @@ console.log(4)
 console.log(5)
 console.log(6)
 console.log(7)
-
+console.log('Stop')
+/*
 let num=0
 setInterval(() => {
     num= num+1;
@@ -32,3 +33,15 @@ setInterval(() => {
     console.log( num);
 }, 2000)
 
+*/
+
+let num=0
+const setIntervalId = setInterval(() =>{
+
+num++;
+console.log(num)
+
+if(num==6){
+    clearInterval(setIntervalId)
+}
+}, 5000)
